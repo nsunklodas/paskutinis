@@ -1,0 +1,55 @@
+#section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  background: gray;
+
+  i {
+    color: #e27866;
+  }
+
+  i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .fa-wifi {
+    rotate: (45deg);
+  }
+
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      color: #d3d5d6;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  #section-2 {
+    height: auto;
+    flex-direction: column;
+
+    i {
+      margin: 20px;
+    }
+
+    span {
+      h1 {
+        text-align: center;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+#section-3 {
+  height: 30vw;
+  display: flex;
+  scroll-margin-top: 200px;
+  align-items: center;
+  background-image: url("../images/christoffer-engstrom-503481-unsplash@2x.png");
+  background-size: cover;
+  background-position: center;
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      rotate: (-45deg);
+    }
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    margin-left: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    width: 80%;
+    height: 380px;
+    padding: 6px 12px;
+    border-top: none;
+    justify-content: space-around;
+    margin: 100px;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+
+      h1 {
+        font-size: 3rem;
+        color: white;
+      }
+
+      p {
+        font-size: 1.5rem;
+        width: 60%;
+        color: white;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-template-rows: 200px 200px;
+      gap: 10px;
+
+      .img1 {
+        background: red;
+        grid-column-start: 1;
+      }
+
+      .img1:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+
+      .img2 {
+        background: red;
+        grid-column-start: 2;
+      }
+
+      .img2:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+
+      .img3 {
+        background: red;
+        grid-column-start: 1;
+        grid-column: span 2;
+        grid-row-start: 2;
+      }
+
+      .img3:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  #section-3 {
+    .tab button {
+      height: 100px;
+      width: 100px;
+    }
+
+    .tabcontent {
+      .grid {
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+      }
+
+      .column {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  #section-3 {
+    flex-direction: column;
+    height: auto;
+
+    .tab {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      .tablinks {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #section-3 {
+    .tabcontent {
+      .column {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  #section-3 {
+    .tabcontent {
+      .grid {
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  #section-3 {
+    .tabcontent {
+      .grid {
+        grid-template-columns: 70px 70px;
+        grid-template-rows: 70px 70px;
+      }
+      .column {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 530px) {
+  #section-3 {
+    .tabcontent {
+      .grid {
+        grid-template-columns: 40px 40px;
+        grid-template-rows: 40px 40px;
+      }
+      .column {
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+}

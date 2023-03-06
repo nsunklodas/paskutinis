@@ -1,0 +1,137 @@
+#section-6 {
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #6696e2;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  hr {
+    width: 3%;
+    border: 1px solid #41d395;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 80px;
+  }
+
+  #meow {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #vienas,
+    #du,
+    #trys {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      h3 {
+        color: white;
+        font-weight: lighter;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      .meow1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        p {
+          background: white;
+          color: #86878b;
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 50px;
+          margin-bottom: 0;
+          border-radius: 0 0 10px 10px;
+        }
+
+        #line {
+          width: 100%;
+          background: #41d395;
+          height: 5px;
+        }
+
+        #line2 {
+          color: white;
+          width: 100%;
+          background: #41d395;
+          height: 30px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    #vienas,
+    #du,
+    #trys {
+      width: 30%;
+      height: auto;
+      background: black;
+      border-radius: 10px;
+    }
+
+    #vienas:hover,
+    #du:hover,
+    #trys:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  #section-6 {
+    height: auto;
+    h1 {
+      margin-top: 40px;
+    }
+    #meow {
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 40px;
+
+      #vienas,
+      #du,
+      #trys {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #section-6 {
+    #meow {
+      #vienas,
+      #du,
+      #trys {
+        width: 100%;
+      }
+    }
+  }
+}
